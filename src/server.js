@@ -1,6 +1,8 @@
 const Hapi = require('hapi');
+const Mongoose = require('mongoose');
 // const route = require('./routes/routes')
 
+Mongoose.connect('localhost/local');
 const server = Hapi.server({
   host: 'localhost',
   port: 3000,
